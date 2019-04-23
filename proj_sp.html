@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Holistic Scene Parsing wtih Weak Supervision</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Hongyuan Zhu</h1>
+            <p>
+            <small>hongyuanzhu.cn (AT) gmail (DOT) com </small><br><br>
+            <a href="https://dblp.uni-trier.de/pers/hd/z/Zhu:Hongyuan" target="_blank">[DBLP]</a>  <br>
+            <a href="https://scholar.google.com/citations?user=XTk3sYAAAAAJ&hl=en" target="_blank">[Google Scholar]</a> </p> <br>
+            <p class="view"><a href="index.html">Homepage</a></p>
+            <p class="view"><a href="sub_publication.html">Publications</a><br>
+            <!--<p class="view"><a href="sub_projects.html">Projects</a></p>-->
+            </header>
+
+      <section>
+
+<h2>
+<a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Holistic Scene Parsing with Various Supervision</h2>
+
+
+
+
+<h4>
+<a id="Introduction-page" class="anchor" href="#Introduction-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction:</h4>
+
+<p>
+    Scene recognition/object detection is useful for a wide range of tasks. 
+    On the other hand, it requires a huge number of training data. Hence I explore an 
+    interactive system, require a user to label a few object-of-interests using bounding boxes and 
+    then use the weakly supervised information for further object co-detection and segmentation. 
+    This problem is challenging, we leverage various priors to solve this ill-posed problem, 
+    for example object exists in various levels of cues, with distinct colors, texture patterns, and shapes. 
+    Moreover, I observed that although segmentation methods can achieve some impressive result in certain classes, 
+    it typically underperform on things or objects, due to not explicitly capturing the global shape information of the object.  
+    On the other hand, detection methods are geared towards capturing this information but tend to fail on stuff, which is amorphous.
+    Thus I proposed correlation-based multi-modal fusion methods to fuse multi-modal features and in the meanwhile we also propose a novel 
+    CRF to fuse various level cues from segmentation 
+    and object detectors together under one framework holistically with very good performance.
+</p>
+
+<div style="text-align: center; display: block; margin-right: auto;">
+<img src="sub_img/proj_sp.JPG" border="0" width="1000"><br></div><br>
+
+
+<hr />
+<h4>Paper:</h4>
+    
+<ul>
+
+<li> Hongyuan Zhu, Fanman Meng, Jianfei Cai, Shijian Lu, 
+        <strong>"Multiple Human Identification and Cosegmentation: A Human-Oriented CRF Approach with Poselets."</strong>, 
+        <em>{IEEE Transactions on Multimedia \textbf{(TMM)}</em> , 2017. 
+<a href="http://publish.illinois.edu/visual-modeling-and-analytics/files/2016/05/MHIC_preprint.pdf" target="_blank">[PDF]</a> </li>
+
+<li>Hongyuan Zhu, Jiangbo Lu, Jianfei Cai, Jianmin Zheng, Nadia M.Thalmann,  
+        <strong>"Multiple Foreground Recognition and Cosegmentation: An Object-Oriented CRF Model with Robust Higher-Order Potentials"</strong>, 
+        <em>IEEE Winter Conference on Applications of Computer Vision (WACV2014, Student Travel Grant, Oral)</em>
+        <a href="http://publish.illinois.edu/visual-modeling-and-analytics/files/2014/08/MFRC_WACV14.pdf" target="_blank">[PDF]</a> 
+        <a href="***" target="_blank"><font color="#ff0000">[Code]</font></a>
+</li>
+
+<li>Hongyuan Zhu, Jiangbo Lu, Jianfei Cai, Jianmin Zheng, Nadia M.Thalmann,  
+    <strong>"Poselet-based multiple human identification and cosegmentation"</strong>, 
+    <em>IEEE International Conference on Image Processing (ICIP2014, Student Travel Grant, Top-10% paper award)</em>
+    <a href="https://ieeexplore.ieee.org/document/7025214" target="_blank">[PDF]</a> 
+    <a href="***" target="_blank"><font color="#ff0000">[Code]</font></a>
+</li>
+
+<li>Hongyuan Zhu, Jean-Baptiste Weibel, Shijian Lu  
+    <strong>"Discriminative Multi-modal Feature Fusion for RGBD Indoor Scene Recognition"</strong>, 
+    <em>{IEEE Conference on Computer Vision and Pattern Recognition (CVPR2016)</em>
+    <a href="http://www.ntu.edu.sg/home/shijian.lu/Publications/Discriminative%20Multi-Modal%20Feature%20Fusion%20for%20RGBD%20Indoor%20Scene%20Recognition.pdf" target="_blank">[PDF]</a> 
+    <a href="***" target="_blank"><font color="#ff0000">[Code]</font></a>
+</li>
+</ul>
+
+<hr />
+<h4>Related Works:</h4>
+
+<ul>
+  <li>Xi Peng, Joey Tianyi Zhou, Hongyuan Zhu, <strong>"k-meansNet: When k-means Meets Differentiable Programming"</strong>,  
+    in <em>arXiv: 1808.07292</em>, 2018.  <a href="https://arxiv.org/pdf/1808.07292" target="_blank">[PDF]</a>  </li>
+  
+    <li>Hongyuan Zhu, Jianfei Cai, Jianmin Zheng, Nadia M.Thalmann,  
+        <strong>"Salient Object Cutout using Google Images"</strong>, 
+        <em>IEEE International Symposium on Circuits and Systems (ISCAS2013, Oral)</em>
+        <a href="https://ieeexplore.ieee.org/document/6571994/" target="_blank">[PDF]</a> 
+        <a href="***" target="_blank"><font color="#ff0000">[Code]</font></a>
+  </li>
+
+  <li> Hongyuan Zhu, Jianmin Zheng, Jianfei Cai, Nadia M.Thalmann, 
+      <strong>"Beyond pixels: a comprehensive survey from bottom-up to semantic image segmentation and cosegmentation." (Invited Survey)</strong>, 
+      <em>{Elsevier Journal of Visual Communications and Image Representation (JVCI, Invited Survey)}</em> , 2013. 
+<a href="https://arxiv.org/pdf/1502.00717.pdf" target="_blank">[PDF]</a> </li>
+</ul>
+
+
+      </section>
+
+    </div>
+    <script src="../../javascripts/scale.fix.js"></script>
+  </body>
+</html>
